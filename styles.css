@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Beau+Rivage&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+/* font-families */
+.font-stix {
+  font-family: "Poppins", sans-serif;
+  font-family: "STIX Two Text", serif;
+}
+.font-beau{
+    font-family: 'Beau Rivage';
+}
+.main{
+    height:100vh ;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner{
+    height: 420px;
+    width: 595px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #000;
+}
+.title1{
+color: #133745;
+font-weight: 600;
+font-size: 36px;
+}
+.title2{
+    color: black;
+    font-weight: 400;
+    font-size: 24px;
+    margin-top: 0px;
+}
+.sub-info{
+font-size: 14px;
+font-weight: 400;
+text-align: left;
+color: white;
+background-color:#27C9A2 ;
+padding: 10px 130px;
+margin-top: 20px;
+}
+.name{
+    font-family: Beau Rivage;
+font-size: 32px;
+font-weight: 400;
+line-height: 43px;
+text-align: left;
+border-bottom: 2px dashed rgba(0, 0, 0, 0.2);
+padding: 6px 150px;
+margin-top: 20px;
+}
+.info{
+    color: #000;
+text-align: center;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+max-width: 100%;
+margin: 20px 0px;
+}
+.date-award{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+.style1{
+    color: #000;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.style2{
+    color: #000;
+font-size: 15px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
