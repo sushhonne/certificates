@@ -28,87 +28,201 @@
         justify-content: center;
       }
       .banner {
-        height: 650px;
+        position: relative;
+        z-index: 50;
+        height: 700px;
         width: 1200px;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        border: 2px solid #000;
+        background-color: white;
+      }
+
+      .top-ele {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        z-index: 2;
+      }
+      .bottom-ele {
+        position: absolute;
+        bottom: 6px;
+        right: 10px;
+        z-index: 2;
+      }
+      .logo {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        z-index: 2;
+      }
+
+      .banner-border {
+        position: relative;
+        border: 20px solid #d9d9d9;
+        z-index: -30;
+      }
+      .green {
+        position: absolute;
+        bottom: -6.35%;
+        left: -20px;
+        z-index: -10;
+      }
+      .blue {
+        position: absolute;
+        bottom: -6.6%;
+        left: -20px;
+        z-index: -20;
+      }
+      .green-size {
+        width: 240px;
+        height: 240px;
+      }
+      .blue-size {
+        width: 300px;
+        height: 300px;
+      }
+
+      .top-bottom-size {
+        width: 150px;
+      }
+      .logo-size {
+        width: 150px;
+        height: 200px;
       }
       .title1 {
         color: #133745;
         font-weight: 600;
-        font-size: 36px;
+        font-size: 80px;
       }
       .title2 {
         color: black;
         font-weight: 400;
-        font-size: 24px;
+        font-size: 48px;
         margin-top: 0px;
       }
       .sub-info {
-        font-size: 14px;
+        position: relative;
+        margin: 40px 0px;
+      }
+      .img-div {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        bottom: 50%;
+        right: 35%;
+        z-index: -10;
+      }
+      .tag-img {
+        width: 700px;
+      }
+      .tag-content {
+        z-index: 2;
+        font-size: 24px;
         font-weight: 400;
-        text-align: left;
+        text-align: center;
         color: white;
-        background-color: #27c9a2;
-        padding: 10px 130px;
-        margin-top: 20px;
       }
       .name {
-        font-family: Beau Rivage;
-        font-size: 32px;
+        font-size: 60px;
         font-weight: 400;
         line-height: 43px;
         text-align: left;
         border-bottom: 2px dashed rgba(0, 0, 0, 0.2);
         padding: 6px 150px;
-        margin-top: 20px;
+        margin-top: 10px;
       }
       .info {
         color: #000;
         text-align: center;
-        font-size: 14px;
+        font-size: 28px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
-        max-width: 100%;
-        margin: 20px 0px;
+        max-width: 80%;
+        margin: 40px 0px;
       }
       .date-award {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 80%;
+        text-align: center;
+        width: 60%;
       }
       .style1 {
         color: #000;
-        font-size: 12px;
+        font-size: 24px;
         font-style: normal;
         font-weight: 400;
+        width: 100%;
         line-height: normal;
       }
       .style2 {
         color: #000;
-        font-size: 15px;
+        font-size: 28px;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
       }
     </style>
-    <!-- <link rel="stylesheet" href="styles.css"> -->
   </head>
   <body>
-    <div class="">
-      <!-- certificate-1 -->
-      <div class="main">
+    <div class="main">
+      <div class="banner-border">
+        <div class="green">
+          <img
+            class="green-size"
+            src="/certificates/images/green.svg"
+            alt="bottom"
+          />
+        </div>
+        <div class="blue">
+          <img
+            class="blue-size"
+            src="/certificates/images/blue.svg"
+            alt="bottom"
+          />
+        </div>
         <div class="banner">
+          <div class="top-ele">
+            <img
+              class="top-bottom-size"
+              src="/certificates/images/top.svg"
+              alt="top"
+            />
+          </div>
+          <div class="bottom-ele">
+            <img
+              class="top-bottom-size"
+              src="/certificates/images/bottom.svg"
+              alt="bottom"
+            />
+          </div>
+          <div class="logo">
+            <img
+              class="logo-size"
+              src="/certificates/images/Group.svg"
+              alt="bottom"
+            />
+          </div>
+
           <h1 class="title1">CERTIFICATE</h1>
           <h3 class="title2 font-stix">of Appreciation</h3>
-          <p class="sub-info font-stix">
-            This certification is proudly presented to
-          </p>
+
+          <div class="sub-info font-stix">
+            <div class="img-div">
+              <img
+                class="tag-img"
+                src="/certificates/images/tag.svg"
+                alt="tag"
+              />
+            </div>
+            <p class="tag-content">
+              This certification is proudly presented to
+            </p>
+          </div>
+
           <p class="name font-beau">Mohammed Roshan</p>
           <p class="info font-stix">
             Lorem ipsum dolor sit amet consectetur. Lorem massa fermentum
@@ -127,7 +241,6 @@
           </div>
         </div>
       </div>
-  
     </div>
   </body>
 </html>
