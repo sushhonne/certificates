@@ -14,8 +14,7 @@
         padding: 0;
       }
       :root {
-        --main-color: #27c9a2;
-        --blue-color: #133745;
+        --brown-color: #C68203;
       }
       /* font-families */
       .font-stix {
@@ -34,11 +33,12 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
       }
       .banner {
         position: relative;
         z-index: 50;
-        height: 660px;
+        height: 700px;
         width: 1200px;
         display: flex;
         flex-direction: column;
@@ -49,14 +49,15 @@
 
       .top-ele {
         position: absolute;
-        top: 6px;
-        left: 10px;
+        top: -18px;
+        left: -18px;
         z-index: 2;
+     
       }
       .bottom-ele {
         position: absolute;
-        bottom: 6px;
-        right: 0px;
+        bottom: -18px;
+        right: -18px;
         z-index: 2;
       }
       .logo {
@@ -72,24 +73,11 @@
 
       .banner-border {
         position: relative;
-        border: 20px solid #d9d9d9;
+        border: 5px solid var(--brown-color);
         z-index: -30;
       }
-      .green {
-        position: absolute;
-        bottom: -4%;
-        left: -20px;
-        z-index: -10;
-      }
-      .blue {
-        position: absolute;
-        bottom: -4.4%;
-        left: -20px;
-        z-index: -20;
-      }
-      
       .title1 {
-        color: var(--blue-color);
+        color: #133745;
         font-weight: 650;
         font-size: 80px;
       }
@@ -97,17 +85,16 @@
         color: black;
         font-weight: 400;
         font-size: 48px;
-        margin-top: 0px;
       }
       .subtitle{
-       color: var(--main-color);
+       color: var(--brown-color);
        font-weight: 500;
         font-size: 30px;
         margin-top: 8px;
       }
       .sub-info {
         position: relative;
-        margin: 40px 0px;
+        margin: 10px 0px;
       }
       .img-div {
         position: absolute;
@@ -120,7 +107,7 @@
         font-size: 24px;
         font-weight: 400;
         text-align: center;
-        color: white;
+        color: black;
       }
       .name {
         font-size: 60px;
@@ -139,7 +126,7 @@
         font-weight: 400;
         line-height: normal;
         max-width: 80%;
-        margin: 40px 0px;
+        margin: 20px 0px;
       }
       .date-award {
         display: flex;
@@ -168,54 +155,24 @@
   <body>
     <div class="main">
       <div class="banner-border">
-        <div class="green">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="330"
-            height="280"
-            viewBox="0 0 174 145"
-            fill="none"
-          >
-            <path d="M174 145L0 0V145H174Z" fill="var(--main-color)" ; />
-          </svg>
-        </div>
-        <div class="blue">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="400"
-            height="350"
-            viewBox="0 0 221 188"
-            fill="var(--blue-color)"
-            ;
-          >
-            <path d="M221 188L0 0V188H221Z" fill="var(--blue-color)" />
-          </svg>
-        </div>
+ 
+
         <div class="banner">
           <div class="top-ele">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="150"
-              height="150"
-              viewBox="0 0 81 75"
-              fill="none"
-            >
-              <path d="M0 75V0H81L0 75Z" fill="var(--main-color)" />
-            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="380" height="380" viewBox="0 0 189 189" fill="none">
+                <rect x="188.661" y="0" width="15" height="180" transform="rotate(90 188.661 0.661255)" fill="#000204"/>
+                <rect x="0.660645" y="0.661255" width="15" height="380" fill="#000204"/>
+                <rect x="122.349" y="22.3517" width="9" height="100" transform="rotate(90 122.349 22.3517)" fill="#C68203"/>
+                <rect x="22.3491" y="22.3517" width="9" height="100" fill="#C68203"/>
+              </svg>
           </div>
           <div class="bottom-ele">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="150"
-              height="150"
-              viewBox="0 0 73 86"
-              fill="none"
-            >
-              <path
-                d="M0.581689 85.4959L73 84.9973L72.4183 0.501455L0.581689 85.4959Z"
-                fill="var(--main-color)"
-              />
-            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="380" height="380" viewBox="0 0 188 188" fill="none">
+                <rect y="188" width="15" height="380" transform="rotate(-90 0 188)" fill="#000204"/>
+                <rect x="188" y="188" width="15" height="380" transform="rotate(-180 188 188)" fill="#000204"/>
+                <rect x="66.3115" y="160.31" width="9" height="100" transform="rotate(-90 66.3115 166.31)" fill="var(--brown-color)"/> 
+                <rect x="166.312" y="166.31" width="9" height="100" transform="rotate(-180 166.312 166.31)" fill="var(--brown-color)"/> 
+              </svg>
           </div>
           <div class="logo">
             <img src="/certificates/logo.png" alt="logo" />
@@ -223,24 +180,9 @@
 
           <h1 class="title1 font-serif">CERTIFICATE</h1>
           <h3 class="title2 font-stix">of Appreciation</h3>
-          <p class="subtitle">Performance</p>
-
+          <p class="subtitle">Value Torch bearer</p>
 
           <div class="sub-info font-stix">
-            <div class="img-div">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="700"
-                height="250"
-                viewBox="0 0 430 37"
-                fill="none"
-              >
-                <path
-                  d="M0 0H430L409.807 19.5L430 37H0L19.0055 20L0 0Z"
-                  fill="var(--main-color)"
-                />
-              </svg>
-            </div>
             <p class="tag-content">
               This certification is proudly presented to
             </p>
@@ -259,7 +201,7 @@
             </div>
             <div class="award">
               <span class="style1">Awarded by</span> <br />
-              <span class="style2">Fazil VN</span>
+              <span class="style2">Fazil VN (CEO)</span>
             </div>
           </div>
         </div>
