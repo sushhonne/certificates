@@ -14,7 +14,8 @@
         padding: 0;
       }
       :root {
-        --brown-color: #C68203;
+        --primary-color: #C68203;
+        --secondary-color: #000204;
       }
       /* font-families */
       .font-stix {
@@ -38,7 +39,7 @@
       .banner {
         position: relative;
         z-index: 50;
-        height: 700px;
+        height: 680px;
         width: 1200px;
         display: flex;
         flex-direction: column;
@@ -73,7 +74,7 @@
 
       .banner-border {
         position: relative;
-        border: 5px solid var(--brown-color);
+        border: 5px solid var(--primary-color);
         z-index: -30;
       }
       .title1 {
@@ -87,7 +88,7 @@
         font-size: 48px;
       }
       .subtitle{
-       color: var(--brown-color);
+       color: var(--primary-color);
        font-weight: 500;
         font-size: 30px;
         margin-top: 8px;
@@ -160,18 +161,18 @@
         <div class="banner">
           <div class="top-ele">
             <svg xmlns="http://www.w3.org/2000/svg" width="380" height="380" viewBox="0 0 189 189" fill="none">
-                <rect x="188.661" y="0" width="15" height="180" transform="rotate(90 188.661 0.661255)" fill="#000204"/>
-                <rect x="0.660645" y="0.661255" width="15" height="380" fill="#000204"/>
+                <rect x="188.661" y="0" width="15" height="180" transform="rotate(90 188.661 0.661255)" fill="var(--secondary-color)"/>
+                <rect x="0.660645" y="0.661255" width="15" height="380" fill="var(--secondary-color)"/>
                 <rect x="122.349" y="22.3517" width="9" height="100" transform="rotate(90 122.349 22.3517)" fill="#C68203"/>
                 <rect x="22.3491" y="22.3517" width="9" height="100" fill="#C68203"/>
               </svg>
           </div>
           <div class="bottom-ele">
             <svg xmlns="http://www.w3.org/2000/svg" width="380" height="380" viewBox="0 0 188 188" fill="none">
-                <rect y="188" width="15" height="380" transform="rotate(-90 0 188)" fill="#000204"/>
-                <rect x="188" y="188" width="15" height="380" transform="rotate(-180 188 188)" fill="#000204"/>
-                <rect x="66.3115" y="160.31" width="9" height="100" transform="rotate(-90 66.3115 166.31)" fill="var(--brown-color)"/> 
-                <rect x="166.312" y="166.31" width="9" height="100" transform="rotate(-180 166.312 166.31)" fill="var(--brown-color)"/> 
+                <rect y="188" width="15" height="380" transform="rotate(-90 0 188)" fill="var(--secondary-color)"/>
+                <rect x="188" y="188" width="15" height="380" transform="rotate(-180 188 188)" fill="var(--secondary-color)"/>
+                <rect x="66.3115" y="160.31" width="9" height="100" transform="rotate(-90 66.3115 166.31)" fill="var(--primary-color)"/> 
+                <rect x="166.312" y="166.31" width="9" height="100" transform="rotate(-180 166.312 166.31)" fill="var(--primary-color)"/> 
               </svg>
           </div>
           <div class="logo">

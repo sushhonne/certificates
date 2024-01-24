@@ -14,7 +14,8 @@
         padding: 0;
       }
       :root {
-        --brown-color: #FFA938;
+        --primary-color: #414141;
+        --secondary-color: #FFA938;
       }
       /* font-families */
       .font-stix {
@@ -73,7 +74,7 @@
 
       .banner-border {
         position: relative;
-        border: 5px solid var(--brown-color);
+        border: 5px solid var(--primary-color);
         z-index: -30;
       }
       .title1 {
@@ -87,7 +88,7 @@
         font-size: 48px;
       }
       .subtitle{
-       color: var(--brown-color);
+       color: var(--secondary-color);
        font-weight: 500;
         font-size: 30px;
         margin-top: 8px;
@@ -160,12 +161,12 @@
         <div class="banner">
           <div class="top-ele">
             <svg xmlns="http://www.w3.org/2000/svg" width="600" height="50" viewBox="0 0 300 25" fill="none">
-                <path d="M300 25H-7V-5H270L300 25Z" fill="#414141"/>
+                <path d="M300 25H-7V-5H270L300 25Z" fill="var(--primary-color)"/>
               </svg>
           </div>
           <div class="bottom-ele">
             <svg xmlns="http://www.w3.org/2000/svg" width="600" height="50" viewBox="0 0 307 24" fill="none">
-                <path d="M25.5 0H307V30H0L25.5 0Z" fill="#FFA938"/>
+                <path d="M25.5 0H307V30H0L25.5 0Z" fill="var(--secondary-color)"/>
               </svg>
           </div>
           <div class="logo">
